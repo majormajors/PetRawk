@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TableLayout android:stretchColumns="1,2,3"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<!-- Magnetometer -->
+		<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView android:layout_span="4" 
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Magnetometer"
+				android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</TableRow>
+		<TableRow android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView android:layout_span="2" 
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="X"
+				android:gravity="right"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Y"
+				android:gravity="right"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Z"
+				android:gravity="right"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+		</TableRow>
+		<TableRow android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Device: " />
+			<TextView android:id="@+id/text_DeviceMagnetX"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+			<TextView android:id="@+id/text_DeviceMagnetY"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+			<TextView android:id="@+id/text_DeviceMagnetZ"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+
+		</TableRow>
+		<TableRow android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Robot: " />
+			<TextView android:id="@+id/text_RobotMagnetX"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+			<TextView android:id="@+id/text_RobotMagnetY"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+			<TextView android:id="@+id/text_RobotMagnetZ"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+
+		</TableRow>
+
+		<!-- Accelerometer -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView android:layout_span="4" 
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Accelerometer"
+				android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</TableRow>
+
+		<TableRow android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView android:layout_span="2" 
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="X"
+				android:gravity="right"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Y"
+				android:gravity="right"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Z"
+				android:gravity="right"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+		</TableRow>
+		<TableRow android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Device: " />
+			<TextView android:id="@+id/text_DeviceAccelX"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+			<TextView android:id="@+id/text_DeviceAccelY"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+			<TextView android:id="@+id/text_DeviceAccelZ"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+
+		</TableRow>
+		<TableRow android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Robot: " />
+			<TextView android:id="@+id/text_RobotAccelX"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+			<TextView android:id="@+id/text_RobotAccelY"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+			<TextView android:id="@+id/text_RobotAccelZ"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+
+		</TableRow>
+
+	</TableLayout>
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    <Button android:id="@+id/button_SpheroConnect"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Connect" />
+	    <Button android:id="@+id/button_SpheroCalibrate"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Calibrate" />
+	    <Button android:id="@+id/button_SpheroForward"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Forward" />
+	</LinearLayout>
+
+</LinearLayout>
